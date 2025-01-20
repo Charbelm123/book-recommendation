@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Search for Books</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="title">Book Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter book title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" name="author" placeholder="Enter author name">
+            </div>
+            <div class="form-group">
+                <label for="num_pages">Number of Pages</label>
+                <input type="number" class="form-control" id="num_pages" name="num_pages" placeholder="Enter number of pages">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="">None</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Juvenile Fiction">Juvenile Fiction</option>
+                    <option value="Biography & Autobiography">Biography & Autobiography</option>
+                    <option value="History">History</option>
+                    <option value="Philosophy">Philosophy</option>
+                    <option value="Literary Criticism">Literary Criticism</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Religion">Religion</option>
+                    <option value="Literary Collections">Literary Collections</option>
+                    <option value="Juvenile Nonfiction">Juvenile Nonfiction</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select class="form-control" id="rating" name="rating">
+                    <option value="">None</option>
+                    <option value="1.0">1.0</option>
+                    <option value="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                    <option value="5.0">5.0</option>
+                    <!-- Add more ratings as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="button">Search</button>
+        </form>
+    </div>
+    <div id="results"></div>
+
+
+    <script>
+        document.getElementById("searchForm").addEventListener('submit', function(event) {
+            event.preventDefault();
+            const input = {
+                title: document.getElementById("title").value,
+                author: document.getElementById("author").value,
+                num_pages: document.getElementById("num_pages").value,
+                category: document.getElementById("category").value,
+                rating: document.getElementById("rating").value
+            }
+    
+            console.log(input);
+    
+            axios.post('/search', input, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                const results = response.data;
+                const res = document.getElementById("results");
+                res.innerHTML = "";
+    
+                if (results.length > 0) {
+                    results.forEach(book => {
+                        const bookElement = document.createElement('div');
+                        bookElement.className = "card mb-3"; // Add Bootstrap card styling
+                        bookElement.style.width = "100%"; // Make the card full width
+    
+                        // Add card content
+                        bookElement.innerHTML = `
+                            <div class="card-body">
+                               
+                                <p>${book}</p>
+                            </div>
+                        `;
+                        res.appendChild(bookElement);
+                    });
+                } else {
+                    res.innerHTML = "<div class='alert alert-warning'>No books found</div>";
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                const res = document.getElementById("results");
+                res.innerHTML = "<div class='alert alert-danger'>An error occurred while searching.</div>";
+            });
+        });
+    </script>
+</body>
+</html>

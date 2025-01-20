@@ -1,0 +1,156 @@
+[
+    {
+        "idAmenity": "1",
+        "description": "An easy-to-use bedside alarm clock with large, illuminated numbers and a snooze feature to ensure you wake up on time. This essential item is perfect for those with busy schedules or early morning commitments, allowing you to customize your wake-up time effortlessly.",
+        "nameAmenity": "Alarm Clock",
+        "categories": ["Room Amenities", "Convenience"],
+        "price": "No fees"
+    },
+    {
+        "idAmenity": "2",
+        "description": "A comprehensive cleaning service for your studio room, ensuring a pristine environment during your stay. Our cleaning team meticulously dusts, vacuums, and sanitizes all surfaces, creating a fresh and inviting atmosphere for you to relax and enjoy.",
+        "nameAmenity": "Cleaning Studio",
+        "categories": ["Cleaning Services", "Room Maintenance"],
+        "price": "10 USD"
+    },
+    {
+        "idAmenity": "3",
+        "description": "A thorough cleaning of the suite designed to maintain a fresh and inviting atmosphere throughout your stay. Our attentive staff pays special attention to linens, bathroom hygiene, and overall cleanliness, ensuring your comfort and satisfaction.",
+        "nameAmenity": "Cleaning Suite",
+        "categories": ["Cleaning Services", "Room Maintenance"],
+        "price": "50 USD"
+    },
+    {
+        "idAmenity": "4",
+        "description": "A convenient scooter rental service that allows you to explore the local area with ease and flexibility. Ideal for sightseeing or leisurely rides, our scooters are well-maintained, come with safety gear, and are ready for your adventure at a moment's notice.",
+        "nameAmenity": "Scooter Rental",
+        "categories": ["Transportation", "Leisure Activities"],
+        "price": "100 USD"
+    },
+    {
+        "idAmenity": "5",
+        "description": "High-speed WiFi connectivity available throughout the property, enabling seamless streaming, remote work, and staying connected with friends or colleagues. Perfect for business travelers needing reliable internet access for video calls or file uploads.",
+        "nameAmenity": "WiFi",
+        "categories": ["Internet Services", "Business Amenities"],
+        "price": "120 USD"
+    },
+    {
+        "idAmenity": "6",
+        "description": "Enjoy breathtaking views from your room, whether it’s the stunning city skyline, serene beach, or majestic mountains. This amenity enhances your overall experience by providing a peaceful and scenic ambiance for relaxation and reflection.",
+        "nameAmenity": "View",
+        "categories": ["Room Amenities", "Scenic Views"],
+        "price": "10 USD"
+    },
+    {
+        "idAmenity": "7",
+        "description": "Comfortable accommodations for smokers, featuring designated smoking areas that ensure a pleasant stay while adhering to safety regulations. This amenity allows you to enjoy your stay without hassle, catering to your preferences.",
+        "nameAmenity": "Smoking",
+        "categories": ["Room Amenities", "Health & Safety"],
+        "price": "No fees"
+    },
+    {
+        "idAmenity": "10",
+        "description": "Complimentary coffee service available in the lobby and via room service, allowing you to enjoy a warm beverage anytime during the day. Perfect for those who appreciate a fresh cup of coffee to kickstart their day or unwind in the evening.",
+        "nameAmenity": "Free Coffee",
+        "categories": ["Dining Services", "Convenience"],
+        "price": "No fees"
+    },
+    {
+        "idAmenity": "12",
+        "description": "A state-of-the-art 55-inch television in your room featuring premium channels and streaming capabilities. Enjoy the latest movies, shows, and entertainment options from the comfort of your bed or lounge area, perfect for unwinding after a long day.",
+        "nameAmenity": "TV 55",
+        "categories": ["Room Amenities", "Entertainment"],
+        "price": "No fees"
+    },
+    {
+        "idAmenity": "13",
+        "description": "A baby cot available upon request, ensuring that families traveling with infants have a safe and comfortable place for their little ones to sleep. This amenity provides peace of mind for parents and enhances the comfort of family stays.",
+        "nameAmenity": "Baby Cot",
+        "categories": ["Family Services", "Room Amenities"],
+        "price": "No fees"
+    },
+    {
+        "idAmenity": "14",
+        "description": "Start your day right with a delightful continental breakfast featuring a variety of fresh fruits, pastries, cereals, and hot dishes. This breakfast option caters to diverse tastes and dietary preferences, ensuring a satisfying start to your morning.",
+        "nameAmenity": "Breakfast",
+        "categories": ["Dining Services", "Meal Options"],
+        "price": "15 USD"
+    },
+    {
+        "idAmenity": "15",
+        "description": "Early check-in is available to provide flexibility for guests arriving before the standard check-in time. This amenity allows you to settle into your room and start enjoying your stay sooner, making it ideal for travelers with early flights or long journeys.",
+        "nameAmenity": "Early Check-in",
+        "categories": ["Check-in Services", "Guest Convenience"],
+        "price": "30 USD"
+    },
+    {
+        "idAmenity": "16",
+        "description": "Request an extra bed for added comfort or space during your stay, ideal for families or groups traveling together. This amenity ensures everyone has a comfortable sleeping arrangement and enhances your overall experience.",
+        "nameAmenity": "Extra Bed",
+        "categories": ["Room Amenities", "Guest Comfort"],
+        "price": "30 USD"
+    },
+    {
+        "idAmenity": "17",
+        "description": "In-room spa treatment services offered for guests seeking relaxation without leaving their room. Options include massages, facials, and wellness therapies, allowing you to unwind and rejuvenate in the privacy of your own space.",
+        "nameAmenity": "In-room Spa Treatment",
+        "categories": ["Wellness Services", "Luxury Amenities"],
+        "price": "100 USD"
+    },
+    {
+        "idAmenity": "18",
+        "description": "Late check-out service available for guests wishing to extend their stay. This amenity allows you to enjoy every last moment in comfort, accommodating your schedule and ensuring you can relax until the very end of your stay.",
+        "nameAmenity": "Late Check-out",
+        "categories": ["Check-out Services", "Guest Convenience"],
+        "price": "40 USD"
+    },
+    {
+        "idAmenity": "19",
+        "description": "Luxury car rental service for those looking to travel in style. Offering a range of high-end vehicles, this amenity ensures a comfortable and prestigious driving experience during your stay.",
+        "nameAmenity": "Luxury Car Rental",
+        "categories": ["Transportation", "Luxury Services"],
+        "price": "300 USD"
+    },
+    {
+        "idAmenity": "20",
+        "description": "Private airport transfer services ensure a smooth and stress-free transition to and from the airport. This amenity provides comfort and convenience for travelers, allowing you to arrive at your destination relaxed and ready.",
+        "nameAmenity": "Private Airport Transfer",
+        "categories": ["Transportation", "Airport Services"],
+        "price": "50 USD"
+    },
+    {
+        "idAmenity": "21",
+        "description": "Experience personalized dining with our private chef service, offering tailored culinary experiences in your room. Enjoy custom menus crafted to your tastes for a unique and memorable dining experience.",
+        "nameAmenity": "Private Chef Service",
+        "categories": ["Dining Services", "Luxury Amenities"],
+        "price": "150 USD"
+    },
+    {
+        "idAmenity": "22",
+        "description": "Experience the beauty of local waters with a private yacht tour, providing an exclusive adventure complete with a dedicated crew and personalized itinerary. Ideal for those looking for a unique and luxurious experience during their stay.",
+        "nameAmenity": "Private Yacht Tour",
+        "categories": ["Leisure Activities", "Luxury Services"],
+        "price": "500 USD"
+    },
+    {
+        "idAmenity": "23",
+        "description": "Efficient airport shuttle service available for guests, offering convenient transport to and from the airport at scheduled times. This amenity provides ease of access and peace of mind for your travel needs.",
+        "nameAmenity": "Airport Shuttle Service",
+        "categories": ["Transportation", "Airport Services"],
+        "price": "30 USD"
+    },
+    {
+        "idAmenity": "24",
+        "description": "Indulge in a breakfast buffet featuring a wide variety of hot and cold dishes to cater to every palate. This amenity ensures that you start your day with a satisfying and diverse meal experience.",
+        "nameAmenity": "Breakfast Buffet",
+        "categories": ["Dining Services", "Meal Options"],
+        "price": "20 USD"
+    },
+    {
+        "idAmenity": "25",
+        "description": "Enjoy room service for food and drinks, allowing you to dine in the comfort of your room anytime during your stay. Perfect for late-night cravings or leisurely meals without leaving your space.",
+        "nameAmenity": "Room Service",
+        "categories": ["Dining Services", "Convenience"],
+        "price": "No fees"
+    }
+]
