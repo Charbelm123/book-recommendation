@@ -40,5 +40,39 @@ conda activate bookrec
 
 pip install pandas numpy faiss-cpu flask requests
 
+##usage 
+
+1-Run the Flask web application:
+  python app.py
+
+2-Open http://localhost:5000 in your browser
+
+3-Enter search criteria like:
+  Book title
+  Author name
+  Number of pages
+  Category
+  Rating
+
+4-View recommended books based on your preferences
+
+
+##Features
+Text-based similarity search using FAISS
+Filtering by multiple criteria
+Web interface for easy interaction
+Fast and efficient recommendations
+Support for various book metadata fields
+Data Source
+
+The book dataset contains 1000 books with fields like:
+ISBN
+Title
+Author
+Category
+Description
+Published year
+Ratings
+Number of pages
 
 
